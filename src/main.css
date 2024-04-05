@@ -12,8 +12,10 @@
   /* colour-theme */
   --jet: #323031ff;
   --jet-2: #3d3b3cff;
+  --jet-body: rgb(38, 36, 37);
   --silver: #c1bdb3ff;
   --cerulean: #007ea7ff;
+  --cerulean-2: rgb(73, 210, 255);
   --rust: #bc3908ff;
 
   background-color: var(--jet);
@@ -29,5 +31,5 @@ body {
 
 /* debugging*/
 * {
-  outline: 1px solid grey;
+  /* outline: 1px solid grey; */
 }

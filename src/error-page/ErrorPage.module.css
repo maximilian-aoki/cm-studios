@@ -1,0 +1,33 @@
+.errorContainer {
+  display: grid;
+  gap: 0.3rem;
+  place-content: center;
+  font-size: 1rem;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.errorContainer > h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.errorLink {
+  margin-top: 1em;
+  color: var(--cerulean-2);
+}
+.errorLink:hover {
+  color: white;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 500px) {
+  .errorContainer {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .errorContainer {
+    font-size: 1.6rem;
+  }
+}

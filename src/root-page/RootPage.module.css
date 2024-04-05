@@ -32,7 +32,7 @@
   margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: var(--jet-2);
+  background-color: var(--jet-body);
 }
 .footer {
   display: grid;

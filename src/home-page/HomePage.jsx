@@ -5,15 +5,16 @@ import styles from './HomePage.module.css';
 
 export default function HomePage({ data }) {
   return (
-    <>
-      <h2>Listings:</h2>
-      {data.map((listing) => {
+    <div className={styles.homeContainer}>
+      <h2>Listings</h2>
+      <div className={styles.listingsFrame}></div>
+      {/* {data.map((listing) => {
         return (
           <Link key={listing.id} to={`/listings/${listing.hash}`}>
             {listing.id}
           </Link>
         );
-      })}
-    </>
+      })} */}
+    </div>
   );
 }
