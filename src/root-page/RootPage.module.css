@@ -11,7 +11,7 @@
   background-color: var(--jet-2);
   place-content: center;
   text-align: center;
-  min-height: 8rem;
+  min-height: 11rem;
 }
 .header > h1 {
   font-size: 2.5rem;
@@ -20,6 +20,21 @@
 }
 .header > h2 {
   font-size: 1.11rem;
+}
+.homeLink {
+  background-image: url('/assets/house.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-color: var(--silver);
+  justify-self: center;
+  margin-top: 1rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.homeLink:hover {
+  background-color: var(--cerulean-2);
 }
 .mainContainer {
   display: grid;
@@ -51,7 +66,7 @@
 /* MEDIA QUERIES */
 @media (min-width: 500px) {
   .header {
-    min-height: 10rem;
+    min-height: 13rem;
   }
   .header > h1 {
     font-size: 3.5rem;
@@ -59,6 +74,11 @@
   }
   .header > h2 {
     font-size: 1.6rem;
+  }
+  .homeLink {
+    margin-top: 1.2rem;
+    width: 3rem;
+    height: 3rem;
   }
   .main {
     margin: 1.5rem;
@@ -71,7 +91,7 @@
 
 @media (min-width: 1000px) {
   .header {
-    min-height: 12rem;
+    min-height: 16rem;
   }
   .header > h1 {
     font-size: 4.5rem;
@@ -80,8 +100,13 @@
   .header > h2 {
     font-size: 2.02rem;
   }
+  .homeLink {
+    margin-top: 1.4rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
   .mainContainer {
-    max-width: 1400px;
+    max-width: 1200px;
   }
   .main {
     margin: 2rem;

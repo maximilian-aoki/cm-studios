@@ -1,4 +1,4 @@
-import { useLocation, Outlet } from 'react-router-dom';
+import { useLocation, Outlet, Link } from 'react-router-dom';
 
 // import components
 import HomePage from '../home-page/HomePage';
@@ -17,6 +17,7 @@ export default function RootPage() {
       <header className={styles.header}>
         <h1>CM STUDIOS</h1>
         <h2>Real-Estate Media Production</h2>
+        <Link to={'/'} className={styles.homeLink}></Link>
       </header>
       <main className={styles.mainContainer}>
         <div className={styles.main}>
@@ -28,7 +29,7 @@ export default function RootPage() {
         </div>
       </main>
       <footer className={styles.footer}>
-        <p>2024 Copyright Maximilian Aoki and Chinthujan Nandakumar</p>
+        <p>2024 Copyright CM Studios</p>
       </footer>
     </div>
   );

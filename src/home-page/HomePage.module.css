@@ -28,6 +28,8 @@
   grid-template-columns: repeat(auto-fill, 1fr);
 }
 .listingCard {
+  position: relative;
+
   display: grid;
   grid-template-rows: 2fr 1fr;
 
@@ -38,6 +40,11 @@
 
   color: var(--jet);
   text-decoration: none;
+
+  transition: transform 0.1s ease-in-out;
+}
+.listingCard:hover {
+  transform: scale(1.04);
 }
 .image {
   width: 100%;

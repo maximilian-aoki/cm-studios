@@ -10,11 +10,13 @@ export default function ErrorPage() {
 
   return (
     <div className={styles.errorContainer}>
-      <h1>Error {error.status} ⛔</h1>
-      <p>{error.error.message || error.statusText}</p>
-      <Link to="/" className={styles.errorLink}>
-        Back to Home
-      </Link>
+      <div className={styles.errorInnerContainer}>
+        <h1>Error {error.status} ⛔</h1>
+        <p>{error.error.message || error.statusText}</p>
+        <Link to="/" className={styles.errorLink}>
+          Back to Home
+        </Link>
+      </div>
     </div>
   );
 }
