@@ -7,9 +7,6 @@ export default function ListingPage() {
   const [data] = useOutletContext();
   const { hash } = useParams();
 
-  console.log(data);
-  console.log(hash);
-
   let currentListing = {};
   let correctHash = false;
   data.forEach((listing) => {

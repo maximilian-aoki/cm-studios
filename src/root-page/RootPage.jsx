@@ -13,13 +13,23 @@ export default function RootPage() {
   const location = useLocation();
 
   return (
-    <>
-      <h1>CM STUDIOS</h1>
-      {location.pathname === '/' ? (
-        <HomePage data={data} />
-      ) : (
-        <Outlet context={[data]} />
-      )}
-    </>
+    <div className={styles.rootContainer}>
+      <header className={styles.header}>
+        <h1>CM STUDIOS</h1>
+        <h2>Real-Estate Media Production</h2>
+      </header>
+      <main className={styles.mainContainer}>
+        <div className={styles.main}>
+          {location.pathname === '/' ? (
+            <HomePage data={data} />
+          ) : (
+            <Outlet context={[data]} />
+          )}
+        </div>
+      </main>
+      <footer className={styles.footer}>
+        <p>2024 Copyright Maximilian Aoki and Chinthujan Nandakumar</p>
+      </footer>
+    </div>
   );
 }

@@ -1,0 +1,93 @@
+.rootContainer {
+  display: grid;
+  grid-template-rows: auto minmax(auto, 1fr) auto;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+}
+.header {
+  display: grid;
+
+  background-color: var(--jet-2);
+  place-content: center;
+  text-align: center;
+  min-height: 8rem;
+}
+.header > h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.header > h2 {
+  font-size: 1.11rem;
+}
+.mainContainer {
+  display: grid;
+  justify-self: center;
+  height: 100%;
+  width: 100%;
+}
+.main {
+  justify-self: stretch;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--jet-2);
+}
+.footer {
+  display: grid;
+
+  background-color: var(--cerulean);
+  place-content: center;
+  text-align: center;
+  min-height: 8rem;
+}
+.footer > p {
+  font-weight: bold;
+  line-height: 1.2rem;
+  max-width: 80vw;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 500px) {
+  .header {
+    min-height: 10rem;
+  }
+  .header > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .header > h2 {
+    font-size: 1.6rem;
+  }
+  .main {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+  .footer > p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    min-height: 12rem;
+  }
+  .header > h1 {
+    font-size: 4.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .header > h2 {
+    font-size: 2.02rem;
+  }
+  .mainContainer {
+    max-width: 1400px;
+  }
+  .main {
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .footer > p {
+    font-size: 1.2rem;
+  }
+}

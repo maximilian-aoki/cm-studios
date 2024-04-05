@@ -10,8 +10,13 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* colour-theme */
+  --jet: #323031ff;
+  --jet-2: #3d3b3cff;
+  --silver: #c1bdb3ff;
+  --cerulean: #007ea7ff;
+  --rust: #bc3908ff;
 
-  background-color: var(--seasalt);
+  background-color: var(--jet);
 }
 *,
 *::before,
